@@ -16,5 +16,7 @@ public class PlayerMovement : MonoBehaviour
         var worldDirection = new Vector3(joystickDirection.x, 0, joystickDirection.y);
 
         transform.position += worldDirection * speed * Time.deltaTime;
+
+        transform.rotation = Quaternion.Euler(0, joystickDirection.y * 360, 0);
     }
 }
