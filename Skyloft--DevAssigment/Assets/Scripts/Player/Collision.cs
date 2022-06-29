@@ -15,7 +15,7 @@ public class Collision : MonoBehaviour
         {
             for (int i = 0; i < spawnedCubeCount; i++)
             {
-                if(stackController.stackList.Count < 30)
+                if(stackController.stackList.Count < stackController.columnCountLimit * stackController.rowCountLimit)
                 {
                     stackController.stackList.Add(spawnedCube[0]);
 

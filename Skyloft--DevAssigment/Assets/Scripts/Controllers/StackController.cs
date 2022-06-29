@@ -8,29 +8,34 @@ public class StackController : MonoBehaviour
     [SerializeField] private Transform startPosition;
 
     public List<GameObject> stackList;
-    [SerializeField] private int columnCountLimit = 3, rowCountLimit = 10;
+    public int columnCountLimit = 3, rowCountLimit = 10;
 
-    private int columnCounter = 0, rowCounter = 0;
+    private int columnCounter = 0;
 
     public void StackPosition()
     {
         var yPos = startPosition.position.y;
         var xPos = startPosition.position.x;
+        var zPos = startPosition.position.z;
         var stackCount = stackList.Count;
 
         for(int i = 0; i < stackCount; i++)
         {
-            var stackXPos = stackList[i].transform.position.x;
-            var stackYPos = stackList[i].transform.position.y;
+            columnCounter ++;
 
-            if(i % 3 == 0)
+            stackList[i].transform.position = new Vector3(xPos, yPos, zPos);
+
+            xPos --;
+
+            if(columnCounter >= columnCountLimit)
             {
-                stackList[i].transform.position = startPosition.position;
+                columnCounter = 0;
+                xPos = 1;
+                yPos ++;
             }
-            else if(i % 3 == 1)
-            {
-                
-            }
+
+            Debug.Log("Column Counter: " + columnCounter + "x Pos: " + xPos);
+            
         }
     }
 }
