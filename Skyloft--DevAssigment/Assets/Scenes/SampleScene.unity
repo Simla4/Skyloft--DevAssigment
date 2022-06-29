@@ -869,7 +869,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876613168}
-  m_LocalRotation: {x: 0.33382016, y: 2.0379507e-16, z: 2.9778904e-16, w: 0.9426368}
+  m_LocalRotation: {x: 0.33382016, y: -2.0379507e-16, z: -2.9778904e-16, w: 0.9426368}
   m_LocalPosition: {x: 0, y: 20.1, z: -24.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1213,7 +1213,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.33382016, y: 2.0379507e-16, z: 2.9778904e-16, w: 0.9426368}
+  m_LocalRotation: {x: 0.33382016, y: -2.0379507e-16, z: -2.9778904e-16, w: 0.9426368}
   m_LocalPosition: {x: 0, y: 20.1, z: -24.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnedCube: []
   objectToSpawn: {fileID: 3430067663082440649, guid: 6edbcd5cfa2212644a38520549c35a45, type: 3}
-  waitingTime: 5
+  waitingTime: 3
 --- !u!65 &1171049536
 BoxCollider:
   m_ObjectHideFlags: 0

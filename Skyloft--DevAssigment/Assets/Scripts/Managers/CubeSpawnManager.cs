@@ -25,7 +25,7 @@ public class CubeSpawnManager : MonoSingleton<CubeSpawnManager>
         {
             var cube = Instantiate(objectToSpawn, gameObject.transform.position, Quaternion.identity);
             spawnedCube.Add(cube);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(waitingTime);
         }
 
         Debug.Log("Tekrar doldu");
