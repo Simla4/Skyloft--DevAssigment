@@ -16,10 +16,6 @@ public class CubeSpawnManager : MonoSingleton<CubeSpawnManager>
         {
             cubeSpawner =  StartCoroutine(IECubeSpawner());
         }
-        else
-        {
-            StopCoroutine(cubeSpawner);
-        }
     }
 
     private IEnumerator IECubeSpawner()
@@ -29,11 +25,9 @@ public class CubeSpawnManager : MonoSingleton<CubeSpawnManager>
         {
             var cube = Instantiate(objectToSpawn, gameObject.transform.position, Quaternion.identity);
             spawnedCube.Add(cube);
-            //yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(3);
         }
 
         Debug.Log("Tekrar doldu");
-
-        yield return new WaitForSeconds(waitingTime);
     }
 }

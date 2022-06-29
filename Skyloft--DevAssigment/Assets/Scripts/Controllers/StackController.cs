@@ -15,12 +15,22 @@ public class StackController : MonoBehaviour
     public void StackPosition()
     {
         var yPos = startPosition.position.y;
+        var xPos = startPosition.position.x;
+        var stackCount = stackList.Count;
 
-        for(int i = 0; i < stackList.Count; i++)
+        for(int i = 0; i < stackCount; i++)
         {
-            stackList[i].transform.position = startPosition.position;
+            var stackXPos = stackList[i].transform.position.x;
+            var stackYPos = stackList[i].transform.position.y;
 
-            yPos ++;
+            if(i % 3 == 0)
+            {
+                stackList[i].transform.position = startPosition.position;
+            }
+            else if(i % 3 == 1)
+            {
+                
+            }
         }
     }
 }
