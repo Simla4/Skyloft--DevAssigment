@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 5853274675460474734}
   - component: {fileID: 4739001045197561275}
   - component: {fileID: 4578054333361008964}
+  - component: {fileID: 3364421408795767465}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -173,9 +174,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &4739001045197561275
 MonoBehaviour:
@@ -190,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystickController: {fileID: 0}
-  speed: 3
+  speed: 6
 --- !u!114 &4578054333361008964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +205,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stackController: {fileID: 3814182999095171237}
+--- !u!114 &3364421408795767465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4179488209447257536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2f27e465df47a499f05d7a6872c50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5882965992777744872
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,8 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 3213529997951682198}
   stackList: []
-  columnCountLimit: 10
-  rowCountLimit: 3
+  columnCountLimit: 3
+  rowCountLimit: 10
 --- !u!1 &8856570513702545133
 GameObject:
   m_ObjectHideFlags: 0

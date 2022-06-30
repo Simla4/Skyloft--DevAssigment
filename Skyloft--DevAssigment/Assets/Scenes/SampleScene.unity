@@ -242,10 +242,11 @@ GameObject:
   - component: {fileID: 189369744}
   - component: {fileID: 189369747}
   - component: {fileID: 189369746}
+  - component: {fileID: 189369748}
   - component: {fileID: 189369745}
   m_Layer: 0
   m_Name: Zone0
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,20 +265,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &189369745
-MeshCollider:
+--- !u!114 &189369745
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189369743}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: b4c4a91046dd42944903513e58d1fadd, type: 2}
+  zoneName: Zone0
+  isLock: 0
 --- !u!23 &189369746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -297,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3442ef348a9bbee48a9831eeeb1c04ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -327,6 +329,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189369743}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &189369748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189369743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &210114143
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,10 +487,11 @@ GameObject:
   - component: {fileID: 329595689}
   - component: {fileID: 329595692}
   - component: {fileID: 329595691}
+  - component: {fileID: 329595693}
   - component: {fileID: 329595690}
   m_Layer: 0
   m_Name: Zone4
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,20 +510,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &329595690
-MeshCollider:
+--- !u!114 &329595690
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329595688}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: 66a70beee4af9d84494ee469d331bd4d, type: 2}
+  zoneName: Zone4
+  isLock: 0
 --- !u!23 &329595691
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -527,7 +544,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3442ef348a9bbee48a9831eeeb1c04ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -557,6 +574,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329595688}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &329595693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329595688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &556219030
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +599,7 @@ GameObject:
   - component: {fileID: 556219034}
   - component: {fileID: 556219033}
   - component: {fileID: 556219032}
+  - component: {fileID: 556219035}
   m_Layer: 0
   m_Name: Storage
   m_TagString: Untagged
@@ -653,6 +684,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556219030}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &556219035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556219030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 9.999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &559227774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4809919292384837254, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
@@ -1051,10 +1095,11 @@ GameObject:
   - component: {fileID: 952392812}
   - component: {fileID: 952392815}
   - component: {fileID: 952392814}
+  - component: {fileID: 952392816}
   - component: {fileID: 952392813}
   m_Layer: 0
   m_Name: Zone6
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1073,20 +1118,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &952392813
-MeshCollider:
+--- !u!114 &952392813
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952392811}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: d1077ca0476a7ff4fad0865549d44736, type: 2}
+  zoneName: Zone6
+  isLock: 0
 --- !u!23 &952392814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1106,7 +1152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3442ef348a9bbee48a9831eeeb1c04ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1136,6 +1182,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952392811}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &952392816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952392811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,10 +1354,11 @@ GameObject:
   - component: {fileID: 1117589911}
   - component: {fileID: 1117589914}
   - component: {fileID: 1117589913}
+  - component: {fileID: 1117589915}
   - component: {fileID: 1117589912}
   m_Layer: 0
   m_Name: Zone3
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1317,20 +1377,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1117589912
-MeshCollider:
+--- !u!114 &1117589912
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117589910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: 6119c3b78b775d84a97784047be971b5, type: 2}
+  zoneName: Zone3
+  isLock: 0
 --- !u!23 &1117589913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1350,7 +1411,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3638df22cd8d5dc49907773aac0ad10c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1380,6 +1441,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117589910}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1117589915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117589910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1171049530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1567,7 @@ MonoBehaviour:
   spawnedCube: []
   objectToSpawn: {fileID: 3430067663082440649, guid: 6edbcd5cfa2212644a38520549c35a45, type: 3}
   waitingTime: 3
+  spawnVal: 10
 --- !u!65 &1171049536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1517,10 +1592,11 @@ GameObject:
   - component: {fileID: 1179869974}
   - component: {fileID: 1179869977}
   - component: {fileID: 1179869976}
+  - component: {fileID: 1179869978}
   - component: {fileID: 1179869975}
   m_Layer: 0
   m_Name: Zone1
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1539,20 +1615,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1179869975
-MeshCollider:
+--- !u!114 &1179869975
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179869973}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: 2dcc864ca2f825b4790530c469c046f0, type: 2}
+  zoneName: Zone1
+  isLock: 0
 --- !u!23 &1179869976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1572,7 +1649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3638df22cd8d5dc49907773aac0ad10c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1602,6 +1679,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179869973}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1179869978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179869973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1195673005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,10 +1937,11 @@ GameObject:
   - component: {fileID: 1329153687}
   - component: {fileID: 1329153690}
   - component: {fileID: 1329153689}
+  - component: {fileID: 1329153691}
   - component: {fileID: 1329153688}
   m_Layer: 0
   m_Name: Zone2
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1869,20 +1960,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1329153688
-MeshCollider:
+--- !u!114 &1329153688
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329153686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: 080c1d83514aefb4f8e661efe347cce0, type: 2}
+  zoneName: Zone2
+  isLock: 0
 --- !u!23 &1329153689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1902,7 +1994,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3442ef348a9bbee48a9831eeeb1c04ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1932,6 +2024,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329153686}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1329153691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329153686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1339645513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,10 +2048,11 @@ GameObject:
   - component: {fileID: 1339645514}
   - component: {fileID: 1339645517}
   - component: {fileID: 1339645516}
+  - component: {fileID: 1339645518}
   - component: {fileID: 1339645515}
   m_Layer: 0
   m_Name: Zone7
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1965,20 +2071,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1339645515
-MeshCollider:
+--- !u!114 &1339645515
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339645513}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: d11171a0815230e4884082af5a3e5632, type: 2}
+  zoneName: Zone7
+  isLock: 0
 --- !u!23 &1339645516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1998,7 +2105,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3638df22cd8d5dc49907773aac0ad10c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2028,6 +2135,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339645513}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1339645518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339645513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1688544132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,10 +2447,11 @@ GameObject:
   - component: {fileID: 2059618184}
   - component: {fileID: 2059618187}
   - component: {fileID: 2059618186}
+  - component: {fileID: 2059618188}
   - component: {fileID: 2059618185}
   m_Layer: 0
   m_Name: Zone5
-  m_TagString: Untagged
+  m_TagString: Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2349,20 +2470,21 @@ Transform:
   m_Father: {fileID: 1754196152}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2059618185
-MeshCollider:
+--- !u!114 &2059618185
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059618183}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd83f5c6376f8f418aef493ba289ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valOfUnlock: {fileID: 11400000, guid: 3789e29e39d8a9a498d7535202e61529, type: 2}
+  zoneName: Zone5
+  isLock: 0
 --- !u!23 &2059618186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2382,7 +2504,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3638df22cd8d5dc49907773aac0ad10c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2412,6 +2534,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059618183}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2059618188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059618183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8174555173740824376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,21 +2554,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3814182999095171237, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
-      propertyPath: rowCountLimit
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814182999095171237, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
-      propertyPath: columnCountLimit
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4179488209447257536, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4739001045197561275, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
-      propertyPath: speed
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4739001045197561275, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
       propertyPath: joystickController

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class CubeCollision : MonoBehaviour
 {
     [SerializeField] StackController stackController;
     
