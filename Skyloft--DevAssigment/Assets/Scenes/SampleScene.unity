@@ -280,6 +280,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: b4c4a91046dd42944903513e58d1fadd, type: 2}
   zoneName: Zone0
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &189369746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -525,6 +526,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: 66a70beee4af9d84494ee469d331bd4d, type: 2}
   zoneName: Zone4
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &329595691
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -913,7 +915,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876613168}
-  m_LocalRotation: {x: 0.3338202, y: -0.000000028092769, z: 0.000000009948618, w: 0.9426368}
+  m_LocalRotation: {x: 0.33382016, y: -2.0379507e-16, z: -2.9778904e-16, w: 0.9426368}
   m_LocalPosition: {x: 0, y: 20.1, z: -24.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1133,6 +1135,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: d1077ca0476a7ff4fad0865549d44736, type: 2}
   zoneName: Zone6
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &952392814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1272,7 +1275,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3338202, y: -0.000000028092769, z: 0.000000009948618, w: 0.9426368}
+  m_LocalRotation: {x: 0.33382016, y: -2.0379507e-16, z: -2.9778904e-16, w: 0.9426368}
   m_LocalPosition: {x: 0, y: 20.1, z: -24.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1313,36 +1316,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1088763815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1088763816}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1088763816
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088763815}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1117589910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1365,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: 6119c3b78b775d84a97784047be971b5, type: 2}
   zoneName: Zone3
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &1117589913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1454,6 +1428,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 3, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1142793272 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3814182999095171237, guid: 930cd2e8509081243ae276b35981c6ab, type: 3}
+  m_PrefabInstance: {fileID: 8174555173740824376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de209b5d9ffb1c499e199ce74d948b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1171049530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1615,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: 2dcc864ca2f825b4790530c469c046f0, type: 2}
   zoneName: Zone1
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &1179869976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1975,6 +1961,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: 080c1d83514aefb4f8e661efe347cce0, type: 2}
   zoneName: Zone2
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &1329153689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2086,6 +2073,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: d11171a0815230e4884082af5a3e5632, type: 2}
   zoneName: Zone7
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &1339645516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2296,36 +2284,6 @@ Transform:
   m_Father: {fileID: 300822807}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1820665497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1820665498}
-  m_Layer: 0
-  m_Name: Controllers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1820665498
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820665497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869395519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,6 +2443,7 @@ MonoBehaviour:
   valOfUnlock: {fileID: 11400000, guid: 3789e29e39d8a9a498d7535202e61529, type: 2}
   zoneName: Zone5
   isLock: 0
+  stackController: {fileID: 1142793272}
 --- !u!23 &2059618186
 MeshRenderer:
   m_ObjectHideFlags: 0

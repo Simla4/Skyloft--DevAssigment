@@ -12,6 +12,8 @@ public class Zone : MonoBehaviour
     public bool isLock;
 
     private BoxCollider boxCollider;
+
+    [SerializeField] private StackController stackController;
     void Start()
     {
         boxCollider = gameObject.GetComponent<BoxCollider>();    
@@ -22,7 +24,13 @@ public class Zone : MonoBehaviour
 
         for (int i = 0; i < valOfUnlock.GetValue(); i++)
         {
+            if(stackController.stackList.Count <= 0) break;
+
             valOfUnlock.DecreaseValue(1);
+
+            stackController.stackList.RemoveAt(0);
+            Destroy(stackController.stackList[0]);
+
 
             yield return new WaitForSeconds(0.5f);
 
